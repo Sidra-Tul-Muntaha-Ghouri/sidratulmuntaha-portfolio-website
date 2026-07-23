@@ -1906,10 +1906,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skills-pill {
   padding: 8px 16px;
-  background: var(--eerie-black-2);
-  color: var(--white-1);
-  border-radius: 20px;
+  background: var(--orange-yellow-crayola);
+  color: hsl(0, 0%, 15%);
+  border-radius: 10px;
   font-size: 0.9rem;
+  line-height: 1.4;
 }
 
   /**
