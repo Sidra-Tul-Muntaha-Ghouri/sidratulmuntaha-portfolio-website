@@ -519,8 +519,6 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
-
-
 /**
  * #service 
  */
@@ -542,6 +540,7 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .service-item::before {
@@ -553,12 +552,10 @@ main {
   z-index: -1;
 }
 
-.service-icon-box { margin-bottom: 10px; }
-
-.service-icon-box img { margin: auto; }
-
-/** this is what i'm adding
-**/
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px hsla(0, 0%, 0%, 0.12);
+}
 
 .service-icon-box {
   width: 48px;
@@ -567,63 +564,14 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: var(--orange-yellow-crayola);
-  flex-shrink: 0;
+  background: hsl(45, 100%, 72%);
+  margin-bottom: 10px;
 }
 
 .service-icon-box ion-icon {
   font-size: 22px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 15%);
 }
-
-.service-item {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.service-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 35px hsla(0, 0%, 0%, 0.12);
-}
-/** adding again this is for the 3rd**/
-.service { margin-bottom: 35px; }
-
-.service-title { margin-bottom: 10px; }
-
-.service-list {
-  display: block;
-}
-
-.service-item {
-  display: flex;
-  align-items: baseline;
-  gap: 18px;
-  padding: 22px 0;
-  border-bottom: 1px solid var(--light-gray-30);
-  background: none;
-  box-shadow: none;
-}
-
-.service-item:last-child { border-bottom: none; }
-
-.service-number {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--light-gray-70);
-  width: 36px;
-  flex-shrink: 0;
-}
-
-.service-content-box { text-align: left; }
-
-.service-item-title { margin-bottom: 4px; }
-
-.service-item-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-3);
-  line-height: 1.6;
-}
-/** till here**/
 
 .service-content-box { text-align: center; }
 
@@ -635,7 +583,6 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
-
 
 /**
  * #testimonials 
