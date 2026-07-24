@@ -557,6 +557,36 @@ main {
 
 .service-icon-box img { margin: auto; }
 
+/** this is what i'm adding
+**/
+
+.service-icon-box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--orange-yellow-crayola);
+  flex-shrink: 0;
+}
+
+.service-icon-box ion-icon {
+  font-size: 22px;
+  color: hsl(0, 0%, 100%);
+}
+
+.service-item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px hsla(0, 0%, 0%, 0.12);
+}
+
+/** till here**/
+
 .service-content-box { text-align: center; }
 
 .service-item-title { margin-bottom: 7px; }
