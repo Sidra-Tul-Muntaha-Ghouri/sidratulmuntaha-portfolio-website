@@ -1427,10 +1427,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
   }
 
-  .service-icon-box {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
+ .service-icon-box {
+  width: 48px;
+  height: 48px;
+  background: var(--orange-yellow-crayola);
+  ...
+}
 
   .service-content-box { text-align: left; }
 
