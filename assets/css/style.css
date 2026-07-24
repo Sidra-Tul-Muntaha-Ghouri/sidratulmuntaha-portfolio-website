@@ -519,79 +519,15 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
-
-
 /**
  * #service 
  */
 
 .service { margin-bottom: 35px; }
 
-.service-title { margin-bottom: 20px; }
-
-.service-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-.service-item {
-  position: relative;
-  background: var(--border-gradient-onyx);
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: var(--shadow-2);
-  z-index: 1;
-}
-
-.service-item::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
-}
-
-.service-icon-box { margin-bottom: 10px; }
-
-.service-icon-box img { margin: auto; }
-
-/** this is what i'm adding
-**/
-
-.service-icon-box {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: var(--orange-yellow-crayola);
-  flex-shrink: 0;
-}
-
-.service-icon-box ion-icon {
-  font-size: 22px;
-  color: hsl(0, 0%, 100%);
-}
-
-.service-item {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.service-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 35px hsla(0, 0%, 0%, 0.12);
-}
-/** adding again this is for the 3rd**/
-.service { margin-bottom: 35px; }
-
 .service-title { margin-bottom: 10px; }
 
-.service-list {
-  display: block;
-}
+.service-list { display: block; }
 
 .service-item {
   display: flex;
@@ -599,11 +535,12 @@ main {
   gap: 18px;
   padding: 22px 0;
   border-bottom: 1px solid var(--light-gray-30);
-  background: none;
-  box-shadow: none;
+  transition: transform 0.25s ease;
 }
 
 .service-item:last-child { border-bottom: none; }
+
+.service-item:hover { transform: translateY(-2px); }
 
 .service-number {
   font-size: 28px;
@@ -616,18 +553,6 @@ main {
 .service-content-box { text-align: left; }
 
 .service-item-title { margin-bottom: 4px; }
-
-.service-item-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-3);
-  line-height: 1.6;
-}
-/** till here**/
-
-.service-content-box { text-align: center; }
-
-.service-item-title { margin-bottom: 7px; }
 
 .service-item-text {
   color: var(--light-gray);
