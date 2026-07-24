@@ -1884,8 +1884,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
-  /** this is what i'm adding
-  */
+  /**
+	 * RESUME
+	 */
+
+  .timeline-text { max-width: 700px; }
+
+}
+
 .skills-group {
   margin-bottom: 25px;
 }
@@ -1915,12 +1921,4 @@ ul.skills-pill-list {
   border-radius: 10px !important;
   font-size: 0.9rem;
   line-height: 1.4;
-}
-
-  /**
-	 * RESUME
-	 */
-
-  .timeline-text { max-width: 700px; }
-
 }
