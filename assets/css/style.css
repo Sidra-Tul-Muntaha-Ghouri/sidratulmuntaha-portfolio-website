@@ -1426,12 +1426,24 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 18px;
     padding: 30px;
   }
-
- .service-icon-box {
+.service-icon-box {
   width: 48px;
   height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   background: var(--orange-yellow-crayola);
-  ...
+  margin-bottom: 10px;
+}
+
+.service-icon-box ion-icon {
+  font-size: 22px;
+  color: hsl(0, 0%, 100%);
 }
 
   .service-content-box { text-align: left; }
