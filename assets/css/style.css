@@ -584,7 +584,45 @@ main {
   transform: translateY(-4px);
   box-shadow: 0 20px 35px hsla(0, 0%, 0%, 0.12);
 }
+/** adding again this is for the 3rd**/
+.service { margin-bottom: 35px; }
 
+.service-title { margin-bottom: 10px; }
+
+.service-list {
+  display: block;
+}
+
+.service-item {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--light-gray-30);
+  background: none;
+  box-shadow: none;
+}
+
+.service-item:last-child { border-bottom: none; }
+
+.service-number {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--light-gray-70);
+  width: 36px;
+  flex-shrink: 0;
+}
+
+.service-content-box { text-align: left; }
+
+.service-item-title { margin-bottom: 4px; }
+
+.service-item-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-3);
+  line-height: 1.6;
+}
 /** till here**/
 
 .service-content-box { text-align: center; }
