@@ -623,8 +623,13 @@ main {
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
+  overflow: hidden;
   border-radius: 14px;
   box-shadow: var(--shadow-1);
+}
+.testimonials-avatar-box img {
+  border-radius: 14px;
+  display: block;
 }
 
 .testimonials-item-title { margin-bottom: 7px; }
