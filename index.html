@@ -382,50 +382,70 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+  <h3 class="h3 clients-title">Projects</h3>
 
-          <ul class="clients-list has-scrollbar">
+  <ul class="clients-list has-scrollbar">
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
+    <li class="clients-item" data-project-item>
+      <a href="#">
+        <img src="./assets/images/project-1.png" alt="Project 1" data-project-logo>
+      </a>
+      <span hidden data-project-title>Project name one</span>
+      <span hidden data-project-text>Describe the project here — scope, your role, tools used, and the outcome.</span>
+    </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
+    <li class="clients-item" data-project-item>
+      <a href="#">
+        <img src="./assets/images/project-2.png" alt="Project 2" data-project-logo>
+      </a>
+      <span hidden data-project-title>Project name two</span>
+      <span hidden data-project-text>Describe the project here — scope, your role, tools used, and the outcome.</span>
+    </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+    <li class="clients-item" data-project-item>
+      <a href="#">
+        <img src="./assets/images/project-3.png" alt="Project 3" data-project-logo>
+      </a>
+      <span hidden data-project-title>Project name three</span>
+      <span hidden data-project-text>Describe the project here — scope, your role, tools used, and the outcome.</span>
+    </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+    <li class="clients-item" data-project-item>
+      <a href="#">
+        <img src="./assets/images/project-4.png" alt="Project 4" data-project-logo>
+      </a>
+      <span hidden data-project-title>Project name four</span>
+      <span hidden data-project-text>Describe the project here — scope, your role, tools used, and the outcome.</span>
+    </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
+  </ul>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
+</section>
 
-          </ul>
+<div class="modal-container" data-project-modal-container>
 
-        </section>
+  <div class="overlay" data-project-overlay></div>
 
+  <section class="testimonials-modal">
+
+    <button class="modal-close-btn" data-project-modal-close-btn>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img src="./assets/images/project-1.png" alt="" width="80" data-project-modal-img>
+      </figure>
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" data-project-modal-title>Project name</h4>
+      <p data-project-modal-text>Description will appear here.</p>
+    </div>
+
+  </section>
+
+</div>
       </article>
 
 
@@ -1149,6 +1169,7 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/skills-tabs.js"></script>
+  <script src="./assets/js/project-modal.js"></script>
 
 </body>
 
