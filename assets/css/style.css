@@ -1545,7 +1545,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   aspect-ratio: 1 / 1;
   scroll-snap-align: start;
   border-radius: 14px;
-  background: hsl(0, 0%, 90%);
+  background: var(--border-gradient-onyx);
   display: flex;
   align-items: center;
   justify-content: center;
