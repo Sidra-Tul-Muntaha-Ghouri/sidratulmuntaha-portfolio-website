@@ -1524,7 +1524,45 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 35px); }
 
+ /** Projects**/
 
+ .projects-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+
+.projects-item {
+  min-width: 140px;
+  aspect-ratio: 1 / 1;
+  scroll-snap-align: start;
+  border-radius: 14px;
+  background: var(--eerie-black-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.projects-item:hover {
+  background: var(--orange-yellow-crayola);
+}
+
+.projects-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 
   /**
    * #RESUME
