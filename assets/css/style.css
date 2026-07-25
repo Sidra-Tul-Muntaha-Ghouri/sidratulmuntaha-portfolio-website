@@ -1524,9 +1524,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 35px); }
 
- /** Projects**/
+ 
+ /** Projects **/
 
- .projects-list {
+.projects-list {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -1542,12 +1543,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .projects-item {
   position: relative;
-  min-width: 140px;
+  flex: 0 0 calc(50% - 12px);
   aspect-ratio: 1 / 1;
   scroll-snap-align: start;
   border-radius: 14px;
   background: var(--border-gradient-onyx);
-  padding: 20px;
+  padding: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1575,6 +1576,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+@media (min-width: 580px) {
+  .projects-item { flex: 0 0 calc(25% - 12px); }
 }
 
   /**
