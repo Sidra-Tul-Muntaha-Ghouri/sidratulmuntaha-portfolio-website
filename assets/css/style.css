@@ -1484,9 +1484,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-avatar-box img { width: 80px; }
 
-  .testimonials-item-title {
+  h4.testimonials-item-title {
     margin-bottom: 10px;
     margin-left: 95px;
+  }
+
+  p.h7.testimonials-item-title {
+    margin-bottom: 10px;
+    margin-left: 0;
   }
 
   .testimonials-text {
