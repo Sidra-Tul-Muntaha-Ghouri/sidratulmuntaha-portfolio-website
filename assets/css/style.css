@@ -353,6 +353,11 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  overflow: hidden;
+}
+.avatar-box img {
+  border-radius: 20px;
+  display: block;
 }
 
 .info-content .name {
@@ -1380,7 +1385,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+ .avatar-box img { border-radius: 30px; width: 120px; }
 
   .info-content .name { margin-bottom: 15px; }
 
