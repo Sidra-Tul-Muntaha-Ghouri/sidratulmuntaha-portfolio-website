@@ -615,7 +615,7 @@ main {
 
 .testimonials-item {
   min-width: 100%;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 .testimonials-avatar-box {
