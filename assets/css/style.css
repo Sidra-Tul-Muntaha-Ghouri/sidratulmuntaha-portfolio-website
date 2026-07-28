@@ -1857,8 +1857,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* service */
 
   .service-list {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px 25px;
+  }
+
+  .service-item {
+    flex: 0 1 calc(50% - 13px);
   }
 
   /* testimonials */
