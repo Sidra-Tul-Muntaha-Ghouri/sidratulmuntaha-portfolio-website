@@ -1670,9 +1670,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 580px) {
   .projects-item {
-    flex: 0 0 calc(25% - 12px);
-    width: calc(25% - 12px);
-    max-width: calc(25% - 12px);
+    flex: 0 0 calc(33.333% - 12px);
+    width: calc(33.333% - 12px);
+    max-width: calc(33.333% - 12px);
   }
 }
 
