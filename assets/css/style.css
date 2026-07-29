@@ -981,6 +981,7 @@ main {
 
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
+
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -2056,4 +2057,42 @@ ul.skills-pill-list {
   border-radius: 10px !important;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.project-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.filter-group-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--light-gray-70);
+  margin-bottom: 8px;
+}
+
+.project-filters .filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-filters .filter-item button {
+  padding: 6px 14px;
+  border-radius: 16px;
+  background: var(--eerie-black-2);
+  color: var(--light-gray);
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.project-filters .filter-item button.active {
+  background: var(--orange-yellow-crayola);
+  color: hsl(0, 0%, 15%);
 }

@@ -851,79 +851,59 @@
 
         <section class="projects">
 
-          <ul class="filter-list">
+          
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+          <div class="project-filters">
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
+            <div class="filter-group">
+              <span class="filter-group-label">Project Type</span>
+              <ul class="filter-list" data-filter-group="type">
+                <li class="filter-item"><button class="active" data-filter-btn data-filter-value="all">All</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="switchgear panel design">Switchgear Panel Design</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="power system studies">Power System Studies</button></li>
+              </ul>
+            </div>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
+            <div class="filter-group">
+              <span class="filter-group-label">Software</span>
+              <ul class="filter-list" data-filter-group="software">
+                <li class="filter-item"><button class="active" data-filter-btn data-filter-value="all">All</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="eplan">EPLAN</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="autocad">AutoCAD</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="simaris configuration">SIMARIS Configuration</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="simaris design">SIMARIS Design</button></li>
+              </ul>
+            </div>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
+            <div class="filter-group">
+              <span class="filter-group-label">Enclosure Type</span>
+              <ul class="filter-list" data-filter-group="enclosure">
+                <li class="filter-item"><button class="active" data-filter-btn data-filter-value="all">All</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="blokset">Blokset</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="prisma international">Prisma International</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="prisma g">Prisma G</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="sivacon s8">Sivacon S8</button></li>
+                <li class="filter-item"><button data-filter-btn data-filter-value="alphaload center">Alphaload Center</button></li>
+              </ul>
+            </div>
 
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
+           <li class="project-item active" data-filter-item data-type="switchgear panel design" data-software="eplan autocad" data-enclosure="blokset">
+            <a href="./portfolio-projects/finance-substation.html">
+              <figure class="project-img" data-project-slider>
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/portfolio-projects/finance-page1.jpg" alt="Finance Substation" loading="lazy" class="slider-img active">
+                <img src="./assets/images/portfolio-projects/finance-page2.jpg" alt="Finance Substation" loading="lazy" class="slider-img">
+              </figure>
+              <h3 class="project-title">Finance Substation</h3>
+              <p class="project-category">Switchgear Panel Design · Blokset</p>
+            </a>
+          </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
@@ -1336,6 +1316,7 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/skills-tabs.js"></script>
+  <script src="./assets/js/project-filters.js"></script>
 
 </body>
 
