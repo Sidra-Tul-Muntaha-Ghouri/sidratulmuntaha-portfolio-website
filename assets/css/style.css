@@ -546,6 +546,9 @@ main {
 
 .service-item {
   position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
   background: var(--border-gradient-onyx);
   padding: 20px;
   border-radius: 14px;
@@ -571,12 +574,12 @@ main {
 .service-icon-box {
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background: hsl(45, 100%, 72%);
-  margin-bottom: 10px;
 }
 
 .service-icon-box ion-icon {
@@ -584,7 +587,7 @@ main {
   color: hsl(0, 0%, 15%);
 }
 
-.service-content-box { text-align: center; }
+.service-content-box { text-align: left; }
 
 .service-item-title { margin-bottom: 7px; }
 
