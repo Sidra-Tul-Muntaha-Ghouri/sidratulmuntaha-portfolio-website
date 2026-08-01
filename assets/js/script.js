@@ -95,3 +95,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// activate a page based on URL hash (e.g. index.html#portfolio)
+window.addEventListener('load', function () {
+  const hash = window.location.hash.replace('#', '');
+  if (hash) {
+    const targetPage = document.querySelector(`[data-page="${hash}"]`);
+    const targetNavLink = Array.from(navigationLinks).find(
+      (link) => link.innerHTML.toLowerCase() === hash
+    );
+
+    if (targetPage) {
+      pages.forEach((page) => page.classList.remove('active'));
+      navigationLinks.forEach((link) => link.classList.remove('active'));
+
+      targetPage.classList.add('active');
+      if (targetNavLink) targetNavLink.classList.add('active');
+    }
+  }
+});
