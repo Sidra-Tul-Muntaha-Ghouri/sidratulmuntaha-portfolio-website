@@ -2114,3 +2114,23 @@ ul.skills-pill-list {
 .slider-img.active {
   opacity: 1;
 }
+
+.filter-select-dropdown {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: var(--eerie-black-2);
+  color: var(--white-1);
+  border: 1px solid var(--light-gray-30);
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+/* Project Type's dropdown only shows on phone; its button list shows otherwise */
+.filter-dropdown-mobile-only { display: none; }
+
+@media (max-width: 579px) {
+  .filter-list-buttons { display: none; }
+  .filter-dropdown-mobile-only { display: block; }
+}

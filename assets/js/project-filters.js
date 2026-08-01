@@ -1,6 +1,7 @@
 'use strict';
 
-const filterGroups = document.querySelectorAll('[data-filter-group]');
+const filterButtonGroups = document.querySelectorAll('[data-filter-group]');
+const filterSelects = document.querySelectorAll('[data-filter-select]');
 const projectItems = document.querySelectorAll('[data-filter-item]');
 
 const activeFilters = {
@@ -25,16 +26,30 @@ function applyFilters() {
   });
 }
 
-filterGroups.forEach((group) => {
-  const groupName = group.dataset.filterGroup;
-  const buttons = group.querySelectorAll('[data-filter-btn]');
+function setFilter(groupName, value) {
+  activeFilters[groupName] = value;
 
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      buttons.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeFilters[groupName] = btn.dataset.filterValue;
-      applyFilters();
+  const btnGroup = document.querySelector(`[data-filter-group="${groupName}"]`);
+  if (btnGroup) {
+    btnGroup.querySelectorAll('[data-filter-btn]').forEach((b) => {
+      b.classList.toggle('active', b.dataset.filterValue === value);
     });
+  }
+
+  const select = document.querySelector(`[data-filter-select="${groupName}"]`);
+  if (select) select.value = value;
+
+  applyFilters();
+}
+
+filterButtonGroups.forEach((group) => {
+  const groupName = group.dataset.filterGroup;
+  group.querySelectorAll('[data-filter-btn]').forEach((btn) => {
+    btn.addEventListener('click', () => setFilter(groupName, btn.dataset.filterValue));
   });
+});
+
+filterSelects.forEach((select) => {
+  const groupName = select.dataset.filterSelect;
+  select.addEventListener('change', () => setFilter(groupName, select.value));
 });
