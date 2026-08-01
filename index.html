@@ -780,54 +780,54 @@
 
         <section class="skill">
 
-  <h3 class="h3 skills-title">Skills</h3>
+      <h3 class="h3 skills-title">Skills</h3>
 
-  <div class="skills-group">
-    <h5 class="skills-group-title">Design &amp; Drafting</h5>
-    <ul class="skills-pill-list">
-      <li class="skills-pill">EPLAN Electric P8</li>
-      <li class="skills-pill">EPLAN ProPanel</li>
-      <li class="skills-pill">AutoCAD</li>
-      <li class="skills-pill">CorelDRAW</li>
-      <li class="skills-pill">SketchUp</li>
-      <li class="skills-pill">MS Visio</li>
-      <li class="skills-pill">Control Wiring &amp; Power Wiring Diagrams</li>
-    </ul>
-  </div>
+          <div class="skills-group">
+            <h5 class="skills-group-title">Design &amp; Drafting</h5>
+            <ul class="skills-pill-list">
+              <li class="skills-pill">EPLAN Electric P8</li>
+              <li class="skills-pill">EPLAN ProPanel</li>
+              <li class="skills-pill">AutoCAD</li>
+              <li class="skills-pill">CorelDRAW</li>
+              <li class="skills-pill">SketchUp</li>
+              <li class="skills-pill">MS Visio</li>
+              <li class="skills-pill">Control Wiring &amp; Power Wiring Diagrams</li>
+            </ul>
+          </div>
 
-  <div class="skills-group">
-    <h5 class="skills-group-title">Simulation &amp; Configuration</h5>
-    <ul class="skills-pill-list">
-      <li class="skills-pill">ETAP</li>
-      <li class="skills-pill">Simaris Configuration</li>
-      <li class="skills-pill">Simaris Design</li>
-      <li class="skills-pill">Easy Prisma</li>
-      <li class="skills-pill">Helioscope</li>
-      <li class="skills-pill">PVsyst</li>
-      <li class="skills-pill">MATLAB</li>
-      <li class="skills-pill">NI Multisim</li>
-    </ul>
-  </div>
+          <div class="skills-group">
+            <h5 class="skills-group-title">Simulation &amp; Configuration</h5>
+            <ul class="skills-pill-list">
+              <li class="skills-pill">ETAP</li>
+              <li class="skills-pill">Simaris Configuration</li>
+              <li class="skills-pill">Simaris Design</li>
+              <li class="skills-pill">Easy Prisma</li>
+              <li class="skills-pill">Helioscope</li>
+              <li class="skills-pill">PVsyst</li>
+              <li class="skills-pill">MATLAB</li>
+              <li class="skills-pill">NI Multisim</li>
+            </ul>
+          </div>
 
-  <div class="skills-group">
-    <h5 class="skills-group-title">Data Analysis &amp; Reporting</h5>
-    <ul class="skills-pill-list">
-      <li class="skills-pill">MS Excel</li>
-      <li class="skills-pill">MS Word</li>
-      <li class="skills-pill">Power BI</li>
-      <li class="skills-pill">MS PowerPoint</li>
-      <li class="skills-pill">Outlook</li>
-    </ul>
-  </div>
+          <div class="skills-group">
+            <h5 class="skills-group-title">Data Analysis &amp; Reporting</h5>
+            <ul class="skills-pill-list">
+              <li class="skills-pill">MS Excel</li>
+              <li class="skills-pill">MS Word</li>
+              <li class="skills-pill">Power BI</li>
+              <li class="skills-pill">MS PowerPoint</li>
+              <li class="skills-pill">Outlook</li>
+            </ul>
+          </div>
 
-    <div class="skills-group">
-    <h5 class="skills-group-title">Other Tools</h5>
-    <ul class="skills-pill-list">
-      <li class="skills-pill">MS Word</li>
-      <li class="skills-pill">MS Teams</li>
-      <li class="skills-pill">Outlook</li>
-    </ul>
-  </div>
+            <div class="skills-group">
+            <h5 class="skills-group-title">Other Tools</h5>
+            <ul class="skills-pill-list">
+              <li class="skills-pill">MS Word</li>
+              <li class="skills-pill">MS Teams</li>
+              <li class="skills-pill">Outlook</li>
+            </ul>
+          </div>
 
 </section>
 
@@ -849,46 +849,34 @@
 
           <div class="project-filters">
 
-              <div class="filter-group">
-                <span class="filter-group-label">Project Type</span>
+            <ul class="filter-list" data-filter-group="type">
+              <li class="filter-item"><button class="active" data-filter-btn data-filter-value="all">All</button></li>
+              <li class="filter-item"><button data-filter-btn data-filter-value="switchgear panel design">LV Panels</button></li>
+              <li class="filter-item"><button data-filter-btn data-filter-value="power system studies">Power System Studies</button></li>
+            </ul>
 
-                <ul class="filter-list filter-list-buttons" data-filter-group="type">
-                  <li class="filter-item"><button class="active" data-filter-btn data-filter-value="all">All</button></li>
-                  <li class="filter-item"><button data-filter-btn data-filter-value="switchgear panel design">Switchgear Panel Design</button></li>
-                  <li class="filter-item"><button data-filter-btn data-filter-value="power system studies">Power System Studies</button></li>
-                </ul>
+            <ul class="filter-list" data-filter-group="software">
+              <li class="filter-item"><button class="active" data-filter-btn data-filter-value="all">All</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="autocad">AutoCAD</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="eplan">EPLAN</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="simaris configuration">Simaris Configuration</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="easy prisma">Easy Prisma</button></li>
+              <li class="filter-item" data-parent-type="power system studies"><button data-filter-btn data-filter-value="simaris design">Simaris Design</button></li>
+            </ul>
 
-                <select class="filter-select-dropdown filter-dropdown-mobile-only" data-filter-select="type">
-                  <option value="all">All</option>
-                  <option value="switchgear panel design">Switchgear Panel Design</option>
-                  <option value="power system studies">Power System Studies</option>
-                </select>
-              </div>
+            <ul class="filter-list" data-filter-group="enclosure">
+              <li class="filter-item"><button class="active" data-filter-btn data-filter-value="all">All</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="sivacon s8">Sivacon S8</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="blokset">Blokset</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="prisma international">Prisma International</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="prismaset p">PrismaSet P</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="prismaset g">PrismaSet G</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="siboard">Siboard</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="alpha load center">Alpha Load Center</button></li>
+              <li class="filter-item" data-parent-type="switchgear panel design"><button data-filter-btn data-filter-value="disbo">Disbo</button></li>
+            </ul>
 
-              <div class="filter-group">
-                <span class="filter-group-label">Software</span>
-                <select class="filter-select-dropdown" data-filter-select="software">
-                  <option value="all">All</option>
-                  <option value="eplan">EPLAN</option>
-                  <option value="autocad">AutoCAD</option>
-                  <option value="simaris configuration">SIMARIS Configuration</option>
-                  <option value="simaris design">SIMARIS Design</option>
-                </select>
-              </div>
-
-              <div class="filter-group">
-                <span class="filter-group-label">Enclosure Type</span>
-                <select class="filter-select-dropdown" data-filter-select="enclosure">
-                  <option value="all">All</option>
-                  <option value="blokset">Blokset</option>
-                  <option value="prisma international">Prisma International</option>
-                  <option value="prisma g">Prisma G</option>
-                  <option value="sivacon s8">Sivacon S8</option>
-                  <option value="alphaload center">Alphaload Center</option>
-                </select>
-              </div>
-
-            </div>
+          </div>
 
           <ul class="project-list">
 

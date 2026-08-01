@@ -2066,34 +2066,26 @@ ul.skills-pill-list {
 .project-filters {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-bottom: 25px;
-}
-
-.filter-group-label {
-  display: block;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--light-gray-70);
-  margin-bottom: 8px;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .project-filters .filter-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .project-filters .filter-item button {
-  padding: 6px 14px;
-  border-radius: 16px;
+  padding: 5px 12px;
+  border-radius: 14px;
   background: var(--eerie-black-2);
   color: var(--light-gray);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   border: none;
   cursor: pointer;
-  transition: background 0.25s ease, color 0.25s ease;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .project-filters .filter-item button.active {
@@ -2101,36 +2093,6 @@ ul.skills-pill-list {
   color: hsl(0, 0%, 15%);
 }
 
-.slider-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.slider-img.active {
-  opacity: 1;
-}
-
-.filter-select-dropdown {
-  display: block;
-  padding: 8px 14px;
-  border-radius: 10px;
-  background: var(--eerie-black-2);
-  color: var(--white-1);
-  border: 1px solid var(--light-gray-30);
-  font-size: 0.9rem;
-  width: 100%;
-  max-width: 280px;
-}
-
-/* Project Type's dropdown only shows on phone; its button list shows otherwise */
-.filter-dropdown-mobile-only { display: none; }
-
-@media (max-width: 579px) {
-  .filter-list-buttons { display: none; }
-  .filter-dropdown-mobile-only { display: block; }
+.project-filters .filter-item.is-hidden {
+  display: none;
 }
