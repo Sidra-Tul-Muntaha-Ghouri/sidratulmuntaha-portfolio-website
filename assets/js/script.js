@@ -116,5 +116,8 @@ window.addEventListener('load', function () {
       targetPage.classList.add('active');
       if (targetNavLink) targetNavLink.classList.add('active');
     }
+
+    // clear the hash right after using it, so a later refresh defaults back to About
+    history.replaceState(null, "", window.location.pathname);
   }
 });
