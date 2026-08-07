@@ -2133,7 +2133,7 @@ ul.skills-pill-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: 24px;
   overflow: hidden; /* Ensures the image follows the rounded corners */
 }
 
@@ -2143,5 +2143,5 @@ ul.skills-pill-list {
   object-fit: contain;
   padding: 10px;
   box-sizing: border-box;
-  border-radius: 15px;
+  border-radius: 24px;
 }
