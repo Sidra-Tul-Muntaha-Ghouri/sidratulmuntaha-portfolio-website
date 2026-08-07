@@ -1482,7 +1482,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .service-icon-box ion-icon {
   font-size: 22px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 15%);
 }
 
   .service-content-box { text-align: left; }
