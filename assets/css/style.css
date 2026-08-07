@@ -2133,6 +2133,8 @@ ul.skills-pill-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 15px;
+  overflow: hidden; /* Ensures the image follows the rounded corners */
 }
 
 .cert-img-box img {
@@ -2141,5 +2143,5 @@ ul.skills-pill-list {
   object-fit: contain;
   padding: 10px;
   box-sizing: border-box;
+  border-radius: 15px;
 }
-
