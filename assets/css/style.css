@@ -2127,26 +2127,3 @@ ul.skills-pill-list {
 .slider-img.active {
   opacity: 1;
 }
-
-.cert-img-box {
-  background: var(--eerie-black-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 24px;
-  overflow: hidden; /* Ensures the image follows the rounded corners */
-}
-
-.cert-img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 24px;
-}
-
-.cert-banner-box img {
-  object-fit: contain;
-  background: var(--eerie-black-2);
-}
