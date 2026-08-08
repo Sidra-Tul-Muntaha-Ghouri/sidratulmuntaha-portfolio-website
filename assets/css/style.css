@@ -2145,3 +2145,8 @@ ul.skills-pill-list {
   box-sizing: border-box;
   border-radius: 24px;
 }
+
+.cert-banner-box img {
+  object-fit: contain;
+  background: var(--eerie-black-2);
+}
