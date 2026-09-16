@@ -2175,4 +2175,4 @@ html[data-theme="light"] {
   transition: background 0.25s ease;
 }
 
-.theme-toggle-btn:hover { background: var(--eerie-black-2); }
+.theme-toggle-btn:hover { background: var(--onyx); }
