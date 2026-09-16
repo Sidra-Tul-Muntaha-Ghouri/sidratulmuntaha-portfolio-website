@@ -2138,10 +2138,10 @@ html[data-theme="light"] {
   --bg-gradient-onyx: linear-gradient(to bottom right, hsl(45, 45%, 94%) 3%, hsl(45, 35%, 88%) 97%);
   --bg-gradient-jet: linear-gradient(to bottom right, hsla(45, 50%, 97%, 0.6) 0%, hsla(45, 40%, 94%, 0) 100%), hsl(45, 50%, 97%);
   --border-gradient-onyx: linear-gradient(to bottom right, hsl(45, 25%, 75%) 0%, hsla(45, 25%, 75%, 0) 50%);
-  --navbar-bg: hsla(45, 40%, 92%, 0.85);
+  --navbar-bg: hsla(0, 0%, 100%, 0.9);
 
-  --jet: hsl(45, 30%, 86%);
-  --onyx: hsl(45, 30%, 90%);
+  --jet: hsl(0, 0%, 100%);
+  --onyx: hsl(0, 0%, 100%);
   --eerie-black-1: hsl(45, 50%, 97%);
   --eerie-black-2: hsl(45, 40%, 93%);
   --smoky-black: hsl(45, 45%, 96%);
