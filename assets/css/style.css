@@ -2127,3 +2127,48 @@ ul.skills-pill-list {
 .slider-img.active {
   opacity: 1;
 }
+
+
+/** TOOGLE BUTTON
+**/
+
+html[data-theme="light"] {
+  --bg-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 96%) 3%, hsl(0, 0%, 90%) 97%);
+  --bg-gradient-jet: linear-gradient(to bottom right, hsla(0, 0%, 100%, 0.6) 0%, hsla(0, 0%, 96%, 0) 100%), hsl(0, 0%, 100%);
+  --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 80%) 0%, hsla(0, 0%, 80%, 0) 50%);
+
+  --jet: hsl(0, 0%, 88%);
+  --onyx: hsl(0, 0%, 92%);
+  --eerie-black-1: hsl(0, 0%, 100%);
+  --eerie-black-2: hsl(0, 0%, 95%);
+  --smoky-black: hsl(0, 0%, 97%);
+  --white-1: hsl(0, 0%, 10%);
+  --white-2: hsl(0, 0%, 20%);
+  --light-gray: hsl(0, 0%, 35%);
+  --light-gray-70: hsla(0, 0%, 35%, 0.7);
+}
+
+/** TOOGLE BUTTON STYLING
+**/
+
+
+.theme-toggle-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--jet);
+  color: var(--orange-yellow-crayola);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+  transition: background 0.25s ease;
+}
+
+.theme-toggle-btn:hover { background: var(--onyx); }
