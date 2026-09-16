@@ -2142,7 +2142,6 @@ html[data-theme="light"] {
 
   --jet: hsl(0, 0%, 100%);
   --onyx: hsl(0, 0%, 100%);
-  --onyx1: hsl(45, 30%, 86%);
   --eerie-black-1: hsl(45, 50%, 97%);
   --eerie-black-2: hsl(45, 40%, 93%);
   --smoky-black: hsl(45, 45%, 96%);
@@ -2176,4 +2175,4 @@ html[data-theme="light"] {
   transition: background 0.25s ease;
 }
 
-.theme-toggle-btn:hover { background: var(--onyx1); }
+.theme-toggle-btn:hover { background: var(--eerie-black-2); }
