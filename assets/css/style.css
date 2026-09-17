@@ -886,7 +886,7 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.8;
   padding-left: 16px;
-  text-indent: -10px;
+  text-indent: -16px;
   text-align: justify;
 }
 
