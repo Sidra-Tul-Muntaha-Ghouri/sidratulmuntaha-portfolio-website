@@ -885,8 +885,8 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.8;
-  padding-left: 0px;
-  text-indent: -16px;
+  padding-left: 16px;
+  text-indent: -10px;
   text-align: justify;
 }
 
