@@ -190,34 +190,52 @@ document.querySelectorAll("[data-goto-portfolio]").forEach(function (link) {
 })();
 
 
-/* Stats counter: counts 1, 2, 3 ... up to data-count */
+/* Stats counter */
 (function () {
   var section = document.querySelector(".stats");
   if (!section) return;
 
   var counters = section.querySelectorAll("[data-count]");
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var DURATION = 2000; // ms, roughly how long each counter takes
+
+  var DURATION = 2000; // Total animation time in milliseconds
+  var START = 0;
 
   function showFinal(el) {
-    clearInterval(el._timer);
+    cancelAnimationFrame(el._animation);
     el.textContent = el.dataset.count;
   }
 
   function start(el) {
     var target = parseInt(el.dataset.count, 10);
-    clearInterval(el._timer);
-    if (reduceMotion || target <= 1) { showFinal(el); return; }
 
-    var current = 1;
-    el.textContent = current;
+    cancelAnimationFrame(el._animation);
 
-    var delay = Math.max(30, Math.round(DURATION / target));
-    el._timer = setInterval(function () {
-      current += 1;                       // +1 each step
+    if (reduceMotion || target <= 0) {
+      showFinal(el);
+      return;
+    }
+
+    var startTime = null;
+
+    function animate(timestamp) {
+      if (!startTime) startTime = timestamp;
+
+      var elapsed = timestamp - startTime;
+      var progress = Math.min(elapsed / DURATION, 1);
+
+      var current = Math.floor(START + (target - START) * progress);
+
       el.textContent = current;
-      if (current >= target) clearInterval(el._timer);
-    }, delay);
+
+      if (progress < 1) {
+        el._animation = requestAnimationFrame(animate);
+      } else {
+        el.textContent = target;
+      }
+    }
+
+    el._animation = requestAnimationFrame(animate);
   }
 
   if (!("IntersectionObserver" in window)) {
@@ -225,9 +243,15 @@ document.querySelectorAll("[data-goto-portfolio]").forEach(function (link) {
     return;
   }
 
-  new IntersectionObserver(function (entries) {
+  var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
-      counters.forEach(entry.isIntersecting ? start : showFinal);
+      if (entry.isIntersecting) {
+        counters.forEach(start);
+      }
     });
-  }, { threshold: 0.4 }).observe(section);
+  }, {
+    threshold: 0.4
+  });
+
+  observer.observe(section);
 })();

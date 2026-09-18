@@ -2248,26 +2248,41 @@ html[data-theme="light"] {
 
 
 /* Featured Projects: heading gap, like Clients and Testimonials */
-.featured-home .clients-title { margin-bottom: 45px; }
+.featured-home .clients-title { margin-bottom: 20px; }
 
 
 
 /* ---------- Stats counter ---------- */
 
-.stats { margin-bottom: 30px; }
+.stats {
+  margin-bottom: 30px;
+}
 
 .stats-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 22px 0;
-  border: 1px solid var(--jet, #383838);
-  border-radius: 16px;
-  background: var(--border-gradient-onyx, #2b2b2c);
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 45px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 0;
+  background: none;
 }
 
 .stats-item {
-  padding: 2px 12px 2px 24px;      /* same left padding in every column keeps text aligned */
-  text-align: left;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.stats-item .counter {
+  display: inline-block;
+  font-weight: 400;
+}
+
+.stats-item p {
+  margin: 3px 0 0;
+  font-weight: 400;
+  text-align: center;
 }
 
 /* dividers are shorter than the card, like your reference picture */
