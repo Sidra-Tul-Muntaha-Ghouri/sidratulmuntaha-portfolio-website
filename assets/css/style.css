@@ -2216,47 +2216,18 @@ html[data-theme="light"] {
 .view-all-btn:hover ion-icon { transform: translateX(4px); }
 
 
-/* ---------- Portfolio tab: 2 large cards per row ---------- */
-/* Every rule starts with ".projects" (the Portfolio tab), so the Home cards are not affected. */
-
+/* Portfolio tab: 1 column on phones, 2 columns from 580px up (same sizes as before) */
 .projects .project-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));   /* exactly 2 per row, on every screen size */
-  gap: 30px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 0;
 }
 
-.projects .project-item {
-  width: 100%;
-  min-width: 0;
-  max-width: none;
-}
-
-.projects .project-item > a { display: block; width: 100%; }
-
-.projects .project-img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  margin-bottom: 15px;
-  border-radius: 16px;
-}
-
-.projects .project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.projects .project-title {
-  margin-left: 10px;
-  font-size: 16px;
-  line-height: 1.35;
-}
-
-.projects .project-category {
-  margin-left: 10px;
-  margin-top: 4px;
-  font-size: 13px;
+@media (min-width: 580px) {
+  .projects .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
 }
 
 /* small phones: reduce the gap so the 2 boxes keep as much width as possible */
