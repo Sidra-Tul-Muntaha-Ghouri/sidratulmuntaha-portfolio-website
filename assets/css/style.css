@@ -2176,3 +2176,29 @@ html[data-theme="light"] {
 }
 
 .theme-toggle-btn:hover { background: var(--onyx); }
+
+
+/**About numbers
+**/
+
+
+.about-me-numbers {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  
+}
+.about-me-numbers div {
+  border-right: 1px solid var(--text);
+  padding-right: 4em;
+}
+.about-me-numbers div:last-child {
+  border-right: none;
+}
+.about-me-bold-numbers {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--dark);
+  
+}
