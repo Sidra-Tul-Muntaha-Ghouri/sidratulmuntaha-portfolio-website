@@ -2252,38 +2252,101 @@ html[data-theme="light"] {
 
 
 
+```css
 /* ---------- Stats counter ---------- */
 
 .stats {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .stats-list {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  display: flex;
   justify-content: center;
-  gap: 45px;
-  padding: 10px 0;
+  align-items: center;
+  gap: 55px;
+  padding: 15px 0;
+  margin: 0;
+  list-style: none;
+
+  /* Remove the box */
   border: none;
   border-radius: 0;
-  background: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 .stats-item {
-  padding: 2px 0;
+  position: relative;
+  min-width: 90px;
+  padding: 0;
   text-align: center;
 }
 
-.stats-item .counter {
-  display: inline-block;
-  font-weight: 400;
+/* Number */
+.stats-number {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2px;
+
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
 }
 
-.stats-item p {
-  margin: 3px 0 0;
+/* + sign */
+.stats-plus {
+  font-size: 18px;
   font-weight: 400;
-  text-align: center;
+  opacity: 0.7;
 }
+
+/* Label */
+.stats-label {
+  margin: 6px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  opacity: 0.65;
+  letter-spacing: 0.3px;
+}
+
+/* Subtle divider between stats */
+.stats-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 30px;
+  background: currentColor;
+  opacity: 0.15;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .stats-list {
+    gap: 25px;
+  }
+
+  .stats-number {
+    font-size: 24px;
+  }
+
+  .stats-label {
+    font-size: 11px;
+  }
+
+  .stats-item:not(:last-child)::after {
+    right: -13px;
+  }
+}
+```
+
 
 /* dividers are shorter than the card, like your reference picture */
 .stats-item + .stats-item { border-left: 1px solid var(--jet, #4a4a4a); }

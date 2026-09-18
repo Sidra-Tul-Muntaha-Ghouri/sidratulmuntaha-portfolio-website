@@ -191,15 +191,17 @@ document.querySelectorAll("[data-goto-portfolio]").forEach(function (link) {
 
 
 /* Stats counter */
+
 (function () {
   var section = document.querySelector(".stats");
   if (!section) return;
 
   var counters = section.querySelectorAll("[data-count]");
-  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
-  var DURATION = 2000; // Total animation time in milliseconds
-  var START = 0;
+  var DURATION = 2000; // All counters finish in 2 seconds
 
   function showFinal(el) {
     cancelAnimationFrame(el._animation);
@@ -224,7 +226,13 @@ document.querySelectorAll("[data-goto-portfolio]").forEach(function (link) {
       var elapsed = timestamp - startTime;
       var progress = Math.min(elapsed / DURATION, 1);
 
-      var current = Math.floor(START + (target - START) * progress);
+      /*
+       * Smooth easing
+       */
+      var easedProgress =
+        1 - Math.pow(1 - progress, 3);
+
+      var current = Math.floor(target * easedProgress);
 
       el.textContent = current;
 
@@ -247,6 +255,7 @@ document.querySelectorAll("[data-goto-portfolio]").forEach(function (link) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         counters.forEach(start);
+        observer.unobserve(section);
       }
     });
   }, {
@@ -255,3 +264,4 @@ document.querySelectorAll("[data-goto-portfolio]").forEach(function (link) {
 
   observer.observe(section);
 })();
+```
