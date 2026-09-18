@@ -121,3 +121,70 @@ window.addEventListener('load', function () {
     history.replaceState(null, "", window.location.pathname);
   }
 });
+
+
+
+/* "View all projects" box -> switches to the Portfolio tab */
+document.querySelectorAll("[data-goto-portfolio]").forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    var portfolioTab = Array.from(document.querySelectorAll("[data-nav-link]"))
+      .find(function (btn) { return btn.textContent.trim().toLowerCase() === "portfolio"; });
+    if (portfolioTab) portfolioTab.click();   // reuses your existing tab-switching code
+    window.scrollTo(0, 0);
+  });
+});
+
+
+
+/* Contact form -> Web3Forms */
+(function () {
+  var form = document.getElementById("contact-form");
+  if (!form) return;
+
+  var btn = form.querySelector("[data-form-btn]");
+  var label = btn.querySelector("span");
+  var statusEl = document.getElementById("form-status");
+
+  function setStatus(text, type) {
+    statusEl.textContent = text;
+    statusEl.className = "form-status " + (type || "");
+  }
+
+  // enable the button only when the form is valid
+  form.querySelectorAll("[data-form-input]").forEach(function (input) {
+    input.addEventListener("input", function () {
+      btn.disabled = !form.checkValidity();
+    });
+  });
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+
+    btn.disabled = true;
+    label.textContent = "Sending...";
+    setStatus("", "");
+
+    try {
+      var response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      });
+      var result = await response.json();
+
+      if (response.ok && result.success) {
+        setStatus("Thank you! Your message has been sent.", "success");
+        form.reset();
+      } else {
+        throw new Error(result.message || "Something went wrong.");
+      }
+    } catch (err) {
+      setStatus("Message not sent. Please try again or email me directly at sidratulmuntaha135@gmail.com.", "error");
+    } finally {
+      label.textContent = "Send message";
+      btn.disabled = !form.checkValidity();
+    }
+  });
+})();

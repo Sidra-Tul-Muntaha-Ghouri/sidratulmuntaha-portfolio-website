@@ -112,7 +112,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+92 (340) 2367511</a>
+              <a href="tel:+923402367511" class="contact-link">+92 (340) 2367511</a>
             </div>
 
           </li>
@@ -305,6 +305,71 @@
   </ul>
 
 </section>
+
+
+        <!--
+        - featured projects
+        -->
+
+        <section class="home-projects">
+
+          <h3 class="h3 home-projects-title">Featured Projects</h3>
+
+          <ul class="project-list home-project-list">
+
+            <li class="project-item active">
+              <a href="./portfolio-projects/MCC-with-VFD-and-DOL-Starter.html">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1/GA01-01.png" alt="MCC Panel with DOL and VFD Starter" loading="lazy">
+                </figure>
+                <h3 class="project-title">MCC Panel with DOL and VFD Starter</h3>
+                <p class="project-category">Enc. PrismaSet International</p>
+              </a>
+            </li>
+
+            <li class="project-item active">
+              <a href="./portfolio-projects/EMDB_Sivacon_S8.html">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/EMDB_Sivacon_S8/GA_page-0001.jpg" alt="EMDB in Sivacon S8" loading="lazy">
+                </figure>
+                <h3 class="project-title">EMDB</h3>
+                <p class="project-category">Enc. Sivacon S8</p>
+              </a>
+            </li>
+
+            <li class="project-item active">
+              <a href="./portfolio-projects/SMDB_PowerLine_PLUS_M_Enclosure-16_Ways.html">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Powerline_plus_M_16_ways/GA_page-LIGHT.jpg" alt="SMDB in PowerLine PLUS M Enclosure, 16 ways" loading="lazy">
+                </figure>
+                <h3 class="project-title">SMDB in PowerLine PLUS M Enclosure - 16 Ways</h3>
+                <p class="project-category">Enc. PowerLine PLUS M</p>
+              </a>
+            </li>
+
+            <!-- 4th box: opens the Portfolio tab -->
+            <li class="project-item active project-more">
+              <a href="#" data-goto-portfolio>
+                <div class="project-more-icon">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <h3 class="project-title">View all projects</h3>
+                <p class="project-category">Open the full portfolio</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
 
 
        
@@ -1137,36 +1202,48 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://maps.app.goo.gl/QBL1sqyueKgiKBeH8"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+      <section class="mapbox" data-mapbox>
+  <figure>
+    <iframe
+      src="https://maps.google.com/maps?q=Karachi%2C%20Pakistan&z=11&output=embed"
+      width="400" height="300"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Map showing Karachi, Pakistan"
+      allowfullscreen></iframe>
+  </figure>
+</section>
 
-        <section class="contact-form">
+<section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+  <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+  <form class="form" id="contact-form" data-form novalidate>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+    <!-- Web3Forms settings -->
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+    <input type="hidden" name="subject" value="New message from your portfolio website">
+    <input type="hidden" name="from_name" value="Portfolio Website">
+    <!-- spam trap: humans never see or tick this -->
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+    <div class="input-wrapper">
+      <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+      <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+    </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    <textarea name="message" class="form-input" placeholder="Your message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+    <button class="form-btn" type="submit" disabled data-form-btn>
+      <ion-icon name="paper-plane"></ion-icon>
+      <span>Send message</span>
+    </button>
 
-          </form>
+    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
 
-        </section>
+  </form>
+
+</section>
 
       </article>
 
