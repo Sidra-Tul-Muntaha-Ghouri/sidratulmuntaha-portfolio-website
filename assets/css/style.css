@@ -2220,13 +2220,13 @@ html[data-theme="light"] {
 /* Every rule starts with ".projects" (the Portfolio tab's section), so the Home cards are not affected. */
 
 .projects .project-list {
-  grid-template-columns: repeat(2, 1fr);   /* phones: 2 across */
+  grid-template-columns: repeat(1, 1fr);   /* phones: 2 across */
   gap: 22px;
 }
 
 @media (min-width: 580px) {
   .projects .project-list {
-    grid-template-columns: repeat(3, 1fr); /* tablets and desktop: 3 across */
+    grid-template-columns: repeat(2, 1fr); /* tablets and desktop: 3 across */
     gap: 26px;
   }
 }
