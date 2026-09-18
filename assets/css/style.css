@@ -2216,23 +2216,26 @@ html[data-theme="light"] {
 .view-all-btn:hover ion-icon { transform: translateX(4px); }
 
 
-/* ---------- Portfolio tab: compact cards ---------- */
-/* Every rule starts with ".projects" (the Portfolio tab's section), so the large Home cards are not affected. */
+/* ---------- Portfolio tab: large cards ---------- */
+/* Every rule starts with ".projects" (the Portfolio tab's section), so the Home cards are not affected. */
 
 .projects .project-list {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);   /* phones: 2 across */
+  gap: 22px;
 }
 
-@media (min-width: 580px)  { .projects .project-list { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 768px)  { .projects .project-list { grid-template-columns: repeat(4, 1fr); } }
-@media (min-width: 1024px) { .projects .project-list { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 580px) {
+  .projects .project-list {
+    grid-template-columns: repeat(3, 1fr); /* tablets and desktop: 3 across */
+    gap: 26px;
+  }
+}
 
 .projects .project-img {
   height: auto;
   aspect-ratio: 4 / 3;
-  margin-bottom: 8px;
-  border-radius: 10px;
+  margin-bottom: 12px;
+  border-radius: 14px;
 }
 
 .projects .project-img img {
@@ -2241,26 +2244,16 @@ html[data-theme="light"] {
   object-fit: cover;
 }
 
-.projects .project-item-icon-box {
-  padding: 9px;
-  border-radius: 9px;
-}
-.projects .project-item-icon-box ion-icon { font-size: 18px; }
-
 .projects .project-title {
   margin-left: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.35;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;        /* long titles stop at two lines so every card stays level */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .projects .project-category {
   margin-left: 0;
-  margin-top: 2px;
-  font-size: 11px;
+  margin-top: 3px;
+  font-size: 12px;
 }
 
 
@@ -2272,3 +2265,54 @@ html[data-theme="light"] {
 }
 .form-status.success { color: #4ade80; }
 .form-status.error   { color: #f87171; }
+
+
+/* Featured Projects: heading gap, like Clients and Testimonials */
+.featured-home .clients-title { margin-bottom: 45px; }
+
+
+
+/* ---------- Stats counter ---------- */
+
+.stats { margin-bottom: 30px; }
+
+.stats-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 22px 0;
+  border: 1px solid var(--jet, #383838);
+  border-radius: 16px;
+  background: var(--border-gradient-onyx, #2b2b2c);
+}
+
+.stats-item {
+  padding: 2px 12px 2px 24px;      /* same left padding in every column keeps text aligned */
+  text-align: left;
+}
+
+/* dividers are shorter than the card, like your reference picture */
+.stats-item + .stats-item { border-left: 1px solid var(--jet, #4a4a4a); }
+
+.stats-number {
+  display: flex;
+  align-items: baseline;
+  font-size: clamp(24px, 6vw, 34px);
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;   /* digits keep equal width while counting */
+  color: var(--white-2, #fff);
+}
+
+.stats-plus { color: var(--orange-yellow-crayola, #ffdb70); }
+
+.stats-label {
+  margin-top: 6px;
+  font-size: clamp(10px, 2.6vw, 13px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--light-gray-70, #a3a3a3);
+}
+
+@media (max-width: 400px) {
+  .stats-item { padding: 2px 8px 2px 14px; }
+}
