@@ -264,4 +264,4 @@ document.querySelectorAll("[data-goto-portfolio]").forEach(function (link) {
 
   observer.observe(section);
 })();
-```
+
