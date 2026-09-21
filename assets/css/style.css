@@ -2152,7 +2152,7 @@ html[data-theme="light"] {
   --light-gray-70: hsla(30, 10%, 38%, 0.75);
 
   html[data-theme="light"] .project-img {
-    border: 1px solid var(--jet);
+    border: 1px solid var(--white-1);
 }
 
 }
@@ -2255,7 +2255,6 @@ html[data-theme="light"] {
 
 
 
-```css
 /* ---------- Stats counter ---------- */
 
 .stats {
