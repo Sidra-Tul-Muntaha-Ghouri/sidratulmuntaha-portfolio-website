@@ -2150,6 +2150,11 @@ html[data-theme="light"] {
   --white-2: hsl(30, 15%, 24%);
   --light-gray: hsl(30, 10%, 38%);
   --light-gray-70: hsla(30, 10%, 38%, 0.75);
+
+  html[data-theme="light"] .project-img {
+    border: 1px solid var(--jet);
+}
+
 }
 
 /** TOOGLE BUTTON STYLING
@@ -2197,23 +2202,21 @@ html[data-theme="light"] {
   align-items: center;
   gap: 8px;
   padding: 10px 18px;
-  border: 1px solid var(--jet, #383838);
+  border: 1px solid var(--orange-yellow-crayola);
   border-radius: 12px;
-  background: var(--border-gradient-onyx, #2b2b2c);
-  color: var(--orange-yellow-crayola, #ffdb70);
+  background: var(--orange-yellow-crayola);
+  color: hsl(0, 0%, 15%);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  transition: background 0.25s ease, border-color 0.25s ease;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
-
-.view-all-btn ion-icon { font-size: 16px; transition: transform 0.25s ease; }
 
 .view-all-btn:hover {
-  background: var(--jet, #383838);
-  border-color: var(--orange-yellow-crayola, #ffdb70);
+  background: hsl(0, 0%, 100%);
+  color: var(--orange-yellow-crayola);
+  border-color: var(--orange-yellow-crayola);
 }
-.view-all-btn:hover ion-icon { transform: translateX(4px); }
 
 
 /* Portfolio tab: 1 column on phones, 2 columns from 580px up (same sizes as before) */
