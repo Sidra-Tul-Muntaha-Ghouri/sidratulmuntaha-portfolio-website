@@ -2003,8 +2003,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .main-content {
-    min-width: 75%;
-    width: 75%;
+    min-width: 70%;
+    width: 70%;
     margin: 0;
   }
 
@@ -2045,11 +2045,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contacts-list { grid-template-columns: 1fr; }
 
   .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
+  white-space: normal;
+  word-break: break-word;
+}
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
@@ -2204,6 +2202,10 @@ html[data-theme="light"] {
 }
 
 .theme-toggle-btn:hover { background: var(--onyx); }
+
+html[data-theme="light"] .theme-toggle-btn:hover ion-icon {
+  color: hsl(0, 0%, 10%);
+}
 
 
 /**About numbers
