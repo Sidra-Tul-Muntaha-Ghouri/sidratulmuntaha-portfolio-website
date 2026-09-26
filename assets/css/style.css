@@ -980,7 +980,7 @@ main {
   width: 100%;
   padding: 12px 16px;
   border: 1px solid var(--jet);
-  border-radius: 14px;
+  border-radius: 12px;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
@@ -994,7 +994,7 @@ main {
   width: 100%;
   padding: 6px;
   border: 1px solid var(--jet);
-  border-radius: 14px;
+  border-radius: 12px;
   z-index: 2;
   opacity: 0;
   visibility: hidden;
@@ -2098,7 +2098,7 @@ ul.skills-pill-list {
   padding: 8px 16px;
   background: var(--orange-yellow-crayola);
   color: hsl(0, 0%, 15%);
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   font-size: 0.9rem;
   line-height: 1.4;
 }
