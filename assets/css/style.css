@@ -825,11 +825,13 @@ main {
 .article-title { margin-bottom: 30px; }
 
 
-/**
- * education and experience 
+//**
+ * education and experience
  */
 
-.timeline { margin-bottom: 30px; }
+.timeline { 
+  margin-bottom: 30px; 
+}
 
 .timeline .title-wrapper {
   display: flex;
@@ -841,11 +843,17 @@ main {
 .timeline-list {
   font-size: var(--fs-6);
   margin-left: 45px;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-.timeline-item { position: relative; }
+.timeline-item { 
+  position: relative; 
+}
 
-.timeline-item:not(:last-child) { margin-bottom: 20px; }
+.timeline-item:not(:last-child) { 
+  margin-bottom: 20px; 
+}
 
 .timeline-item-title {
   font-size: var(--fs-6);
@@ -888,6 +896,7 @@ main {
   padding-left: 16px;
   text-indent: -15px;
   text-align: justify;
+  margin-bottom: 8px;
 }
 
 
