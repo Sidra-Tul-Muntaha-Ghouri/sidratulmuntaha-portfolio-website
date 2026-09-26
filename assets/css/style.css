@@ -2098,7 +2098,7 @@ ul.skills-pill-list {
   padding: 8px 16px;
   background: var(--orange-yellow-crayola);
   color: hsl(0, 0%, 15%);
-  border-radius: 10px !important;
+  border-radius: 8px !important;
   font-size: 0.9rem;
   line-height: 1.4;
 }
