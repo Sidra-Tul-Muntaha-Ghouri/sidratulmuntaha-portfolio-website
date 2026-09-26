@@ -462,7 +462,7 @@ main {
   font-size: var(--fs-7);
 }
 .contact-link:hover {
-  color: var(--orange-yellow-crayola);
+  color: var(--vegas-gold);
 }
 
 .contact-info address { font-style: normal; }
