@@ -650,10 +650,18 @@
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
-
         </header>
+
+        <ul class="resume-filter-list" data-resume-filter>
+          <li class="filter-item"><button class="active" data-resume-filter-btn data-resume-filter-value="all">All</button></li>
+          <li class="filter-item"><button data-resume-filter-btn data-resume-filter-value="education">Education</button></li>
+          <li class="filter-item"><button data-resume-filter-btn data-resume-filter-value="skills">Skills</button></li>
+          <li class="filter-item"><button data-resume-filter-btn data-resume-filter-value="experience">Work Experience</button></li>
+          <li class="filter-item"><button data-resume-filter-btn data-resume-filter-value="internships">Internships</button></li>
+          <li class="filter-item"><button data-resume-filter-btn data-resume-filter-value="volunteer">Volunteer Work</button></li>
+        </ul>
               
-        <section class="timeline">
+        <section class="timeline" data-resume-section="education">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -711,7 +719,7 @@
               </section>
         
        
-                  <section class="timeline">
+                  <section class="timeline" data-resume-section="skills">
 
 
             <div class="title-wrapper">
@@ -785,7 +793,7 @@
 
           </section>
 
-        <section class="timeline">
+        <section class="timeline" data-resume-section="experience">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -933,7 +941,7 @@
 
 </section>
 
-        <section class="timeline">
+        <section class="timeline" data-resume-section="internships">
 
           <div class="title-wrapper">
             <div class="icon-box">
