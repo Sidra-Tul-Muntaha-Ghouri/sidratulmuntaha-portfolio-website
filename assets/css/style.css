@@ -23,6 +23,7 @@ body {
   
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
   scrollbar-gutter: stable;
 }
   /**
@@ -459,6 +460,9 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+}
+.contact-link:hover {
+  color: var(--orange-yellow-crayola);
 }
 
 .contact-info address { font-style: normal; }
@@ -913,7 +917,7 @@ main {
   color: var(--light-gray);
   font-size: 16px;
 }
-}
+
 
 /**
  * skills 
@@ -2003,8 +2007,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .main-content {
-    min-width: 70%;
-    width: 70%;
+    min-width: 75%;
+    width: 75%;
     margin: 0;
   }
 
@@ -2047,9 +2051,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contact-info :is(.contact-link) {
   white-space: normal;
   word-break: break-word;
-}
+  }
   .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
+    --fs-7: 12px;
     font-weight: var(--fw-300);
   }
 
@@ -2203,10 +2207,13 @@ html[data-theme="light"] {
 
 .theme-toggle-btn:hover { background: var(--onyx); }
 
-html[data-theme="light"] .theme-toggle-btn:hover ion-icon {
-  color: hsl(0, 0%, 10%);
+html[data-theme="light"] .theme-toggle-btn:hover {
+  background: hsl(0, 0%, 10%);
 }
 
+html[data-theme="light"] .theme-toggle-btn:hover ion-icon {
+  color: hsl(0, 0%, 100%);
+}
 
 /**About numbers
 **/
