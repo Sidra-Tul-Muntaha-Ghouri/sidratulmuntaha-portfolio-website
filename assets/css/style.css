@@ -380,7 +380,7 @@ main {
 }
 
 .info-content .title {
-  color: var(--smoky-black);
+  color:  hsl(0, 0%, 15%);
   background: var(--orange-yellow-crayola);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
