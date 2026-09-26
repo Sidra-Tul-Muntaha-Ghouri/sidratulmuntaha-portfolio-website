@@ -2205,15 +2205,9 @@ html[data-theme="light"] {
   transition: background 0.25s ease;
 }
 
-.theme-toggle-btn:hover { background: var(--onyx); }
+.theme-toggle-btn:hover { background: var(--navbar-bg); }
 
-html[data-theme="light"] .theme-toggle-btn:hover {
-  background: hsl(0, 0%, 10%);
-}
 
-html[data-theme="light"] .theme-toggle-btn:hover ion-icon {
-  color: hsl(0, 0%, 100%);
-}
 
 /**About numbers
 **/
