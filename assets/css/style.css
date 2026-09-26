@@ -380,8 +380,8 @@ main {
 }
 
 .info-content .title {
-  color: var(--white-1);
-  background: var(--onyx);
+  color: var(--smoky-black);
+  background: var(--orange-yellow-crayola);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
