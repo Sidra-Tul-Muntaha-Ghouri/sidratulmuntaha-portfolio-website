@@ -961,6 +961,45 @@ main {
   border-radius: inherit;
 }
 
+/**
+ * certificates 
+ */
+
+
+.timeline-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.25s ease;
+}
+
+.timeline-link .timeline-item-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: color 0.25s ease;
+}
+
+.certificate-icon {
+    font-size: 16px;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.timeline-link:hover {
+    transform: translateX(5px);
+}
+
+.timeline-link:hover .timeline-item-title {
+    color: var(--orange-yellow-crayola);
+}
+
+.timeline-link:hover .certificate-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 
 
