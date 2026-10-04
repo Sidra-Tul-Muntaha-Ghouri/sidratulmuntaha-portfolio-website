@@ -15,17 +15,19 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+
+:root {
+
+body {
+  overflow-x: hidden;
+}
+  
 html {
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-gutter: stable;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-:root {
 
   /**
    * colors
@@ -953,7 +955,7 @@ main {
   background: var(--jet);
   width: 100%;
   height: 8px;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .skill-progress-fill {
