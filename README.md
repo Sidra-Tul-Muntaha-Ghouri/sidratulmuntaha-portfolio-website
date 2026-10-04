@@ -1,10 +1,14 @@
 # My Personal portfolio
 
-# ⚡ Sidra Tul Muntaha — Electrical Engineering Portfolio
-
 <p align="center">
   <strong>Electrical Design Engineer | LV Switchgear & Panel Design | EPLAN | Power Systems | Data & AI</strong>
 </p>
+
+[![GitHub repo size](https://img.shields.io/github/repo-size/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website)](https://github.com/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website)
+[![GitHub stars](https://img.shields.io/github/stars/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website?style=social)](https://github.com/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website?style=social)](https://github.com/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website/network/members)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Website-orange)](https://sidra-tul-muntaha-ghouri.github.io/sidratulmuntaha-portfolio-website/)
+
 
 <p align="center">
   <a href="YOUR_PORTFOLIO_URL">🌐 Portfolio</a>
