@@ -16,17 +16,17 @@
 \*-----------------------------------*/
 
 
-:root {
-
-body {
-  overflow-x: hidden;
-}
-  
 html {
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-gutter: stable;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
 
 
   /**
