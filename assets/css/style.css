@@ -927,6 +927,10 @@ main {
   margin-bottom: 10px;
 }
 
+.project-note em {
+  color: inherit;
+}
+
 /**
  * skills 
  */
