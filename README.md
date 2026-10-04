@@ -8,7 +8,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website?style=social)](https://github.com/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website?style=social)](https://github.com/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website/network/members)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Website-orange)](https://sidra-tul-muntaha-ghouri.github.io/sidratulmuntaha-portfolio-website/)
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/sidra-tul-muntaha-ghouri/)
 
 <p align="center">
   <a href="YOUR_PORTFOLIO_URL">🌐 Portfolio</a>
