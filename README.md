@@ -35,8 +35,7 @@ This portfolio brings together my:
 
 ## 🌐 Live Portfolio
 
-[![GitHub forks](https://img.shields.io/github/forks/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website?style=social)](https://github.com/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website/network/members)
-
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Website-orange)](https://sidra-tul-muntaha-ghouri.github.io/sidratulmuntaha-portfolio-website/)
 ---
 
 ## 🧰 Technologies Used
@@ -87,7 +86,9 @@ sidratulmuntaha-portfolio-website/
 │
 ├── index.html
 ├── README.md
-└── ... ```
+└── ... 
+
+```
 
 
 
@@ -100,4 +101,3 @@ If you want to contact me you can reach me at [Twitter](https://www.x.com/codewi
 
 MIT
 
--->
