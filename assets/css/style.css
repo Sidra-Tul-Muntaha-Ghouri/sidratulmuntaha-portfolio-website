@@ -2484,3 +2484,54 @@ html[data-theme="light"] {
   color: var(--light-gray-70);
   font-size: 0.8rem;
 }
+
+/* resume download button */
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 15px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  background: var(--orange-yellow-crayola);
+  color: hsl(0, 0%, 15%);
+  border: 1px solid var(--orange-yellow-crayola);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.resume-download-btn:hover {
+  background: transparent;
+  color: var(--orange-yellow-crayola);
+}
+
+.resume-print-sheet { display: none; }
+
+@media print {
+  body > *:not(.resume-print-sheet) { display: none !important; }
+
+  .resume-print-sheet {
+    display: block !important;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.35;
+    color: #1a1a1a;
+    max-width: 100%;
+  }
+
+  .resume-print-sheet h1 { font-size: 20pt; text-align: center; margin: 0 0 4px; }
+  .resume-print-sheet .rp-contact { text-align: center; font-size: 9.5pt; margin-bottom: 10px; color: #333; }
+  .resume-print-sheet .rp-contact a { color: #1a5aa8; text-decoration: none; }
+  .resume-print-sheet h2 {
+    font-size: 11.5pt; color: #1a5aa8; text-transform: uppercase; letter-spacing: 0.5px;
+    border-bottom: 1px solid #b9cfe6; margin: 12px 0 4px; padding-bottom: 2px;
+  }
+  .resume-print-sheet p { margin: 3px 0; text-align: justify; }
+  .resume-print-sheet .rp-entry { margin-top: 6px; }
+  .resume-print-sheet .rp-entry-top { display: flex; justify-content: space-between; font-weight: 700; }
+  .resume-print-sheet .rp-org { color: #1a5aa8; font-weight: 700; font-size: 10pt; }
+  .resume-print-sheet .rp-date { font-style: italic; font-weight: 400; font-size: 9.5pt; }
+  .resume-print-sheet ul { margin: 2px 0 0; padding-left: 16px; }
+  .resume-print-sheet li { margin: 1px 0; text-align: justify; }
+}

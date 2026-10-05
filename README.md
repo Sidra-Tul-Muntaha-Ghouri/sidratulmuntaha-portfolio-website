@@ -9,6 +9,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website?style=social)](https://github.com/Sidra-Tul-Muntaha-Ghouri/sidratulmuntaha-portfolio-website/network/members)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Website-orange)](https://sidra-tul-muntaha-ghouri.github.io/sidratulmuntaha-portfolio-website/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/sidra-tul-muntaha-ghouri/)
+[![License](https://img.shields.io/github/license/Sidra-Tul-Muntaha-Ghouri/Dr._AI)](https://opensource.org/licenses/MIT)
 
 ---
 
@@ -33,12 +34,12 @@ This portfolio brings together my:
 
 ---
 
-## 🌐 Live Portfolio
+## 🔗 Live Portfolio
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Website-orange)](https://sidra-tul-muntaha-ghouri.github.io/sidratulmuntaha-portfolio-website/)
 ---
 
-## 🧰 Technologies Used
+## ⚒️ Technologies Used
 
 This portfolio is built using lightweight web technologies with a focus on maintainability, responsiveness, and usability.
 
