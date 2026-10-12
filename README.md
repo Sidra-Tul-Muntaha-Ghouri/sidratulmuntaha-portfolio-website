@@ -96,7 +96,7 @@ sidratulmuntaha-portfolio-website/
 
 ## Contact
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+If you want to contact me you can reach me at [LinkedIn](https://www.linkedin.com/in/sidra-tul-muntaha-ghouri/).
 
 ## License
 
